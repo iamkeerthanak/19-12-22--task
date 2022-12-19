@@ -22,7 +22,7 @@ jobs:
           path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
-      - name: Cache Maven packages
+      - name: Cache Maven package
         uses: actions/cache@v1
         with:
           path: ~/.m2
